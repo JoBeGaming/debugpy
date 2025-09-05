@@ -13,7 +13,7 @@ def getargspec(*args, **kwargs):
     return arg_spec.args, arg_spec.varargs, arg_spec.varkw, arg_spec.defaults, arg_spec.kwonlyargs or [], arg_spec.kwonlydefaults or {}
 
 
-# completion types.
+# completion types. #TODO can they use Enums here?
 TYPE_IMPORT = "0"
 TYPE_CLASS = "1"
 TYPE_FUNCTION = "2"

@@ -22,6 +22,10 @@ class BaseStdIn:
             self.encoding = sys.stdin.encoding
         except:
             # Not sure if it's available in all Python versions...
+            # FIX:
+            # from _pydev_bundle._pydev_filesystem_encoding import getfilesystemencoding
+            #
+            # self.encoding = getfilesystemencoding()
             pass
         self.original_stdin = original_stdin
 
